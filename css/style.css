@@ -1,0 +1,161 @@
+body {
+	background-color: #ffffff; 
+	font-family: 'Century Gothic', sans-serif;
+	overflow: hidden;
+	color: #666666;
+}
+
+#links {
+	background-color: #f8f8f8;
+	text-align: center;
+	position: fixed;
+	width: 100%;
+	padding-left: 0;
+	margin: 0;
+	left: 0;
+	top: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#links li {
+    display: inline;
+    margin: 2%;
+}
+
+#links li a {
+	text-decoration: none;
+}
+
+#links li a img {
+	-webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+#links li a img:hover {
+	-webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+h1 {
+	position: fixed;
+	width: 100%;
+	left: 0px;
+	top: 50px;
+    font-size: 40px;
+    text-align: center;
+	font-weight: normal;
+}
+
+#footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	margin: 0;
+	width: 100%;
+	padding-left: 0;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	background-color: #f8f8f8;
+}
+
+#container {
+	z-index: -1;
+	left: 0;
+	top: 15%;
+	padding-top: 80px;
+	position: fixed;
+    width: 18560px;
+    overflow: hidden;
+}
+
+.gallery {
+    height: 450px;
+    -webkit-animation: bannermove 120s linear infinite;
+       -moz-animation: bannermove 120s linear infinite;
+        -ms-animation: bannermove 120s linear infinite;
+         -o-animation: bannermove 120s linear infinite;
+            animation: bannermove 120s linear infinite;
+}
+
+.gallery:hover {
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+.gallery img {
+    margin-bottom: 100px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+ 
+.gallery img:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    cursor: pointer;
+ 
+    -webkit-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+    box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+}
+ 
+@keyframes "bannermove" {
+	0% {
+		margin-left: 0px;
+	}
+	100% {
+		margin-left: -18620px;
+	} 
+}
+ 
+@-moz-keyframes bannermove {
+	0% {
+		margin-left: 0px;
+	}
+	100% {
+		margin-left: -18620px;
+	}
+}
+ 
+@-webkit-keyframes "bannermove" {
+	0% {
+		margin-left: 0px;
+	}
+	100% {
+		margin-left: -18620px;
+	}
+}
+ 
+@-ms-keyframes "bannermove" {
+	0% {
+		margin-left: 0px;
+	}
+	100% {
+		margin-left: -18620px;
+	}
+}
+ 
+@-o-keyframes "bannermove" {
+	0% {
+		margin-left: 0px;
+	}
+	100% {
+		margin-left: -18620px;
+	}
+}
