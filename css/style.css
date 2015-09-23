@@ -1,8 +1,36 @@
+@media screen and (max-width: 500px) {
+/* applies only if the screen is narrower than 500px */
+    #header {
+        position: static
+    }
+}
+
+a {
+    user-drag: none; 
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+}
+
+ul {
+    user-drag: none; 
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+} 
+
+img {
+    user-drag: none; 
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+}
+
 body {
 	background-color: #ffffff; 
 	font-family: 'Century Gothic', sans-serif;
 	overflow: hidden;
 	color: #666666;
+    user-drag: none; 
+    -moz-user-select: none;
+    -webkit-user-drag: none;
 }
 
 .footerlink {
@@ -195,7 +223,7 @@ body {
 	top: 15%;
 	padding-top: 80px;
 	position: fixed;
-    width: 150%;
+    width: 200%;
     overflow: hidden;
 }
 
