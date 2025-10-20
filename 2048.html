@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Ittai Shay</title>
+        <title>2048 - Ittai Shay</title>
         <link rel="stylesheet" href="css/style.css"></link>
+        <link rel="stylesheet" href="css/2048.css"></link>
         <link rel="shortcut icon" href="icons/favicon.png">
     </head>
     <body>
@@ -49,12 +50,44 @@
             <h3><a href="2048.html" class="headerlink" id="2048link">Play 2048</a></h3>
         </div>
 
-        <h1 id="hometitle"><a href="index.html">Ittai Shay</a></h1>
+        <h1 id="title"><a href="index.html">Ittai Shay</a></h1>
 
-        <img src="gallery/background.png" id="background">
+        <div id="game-container">
+            <div id="game-header">
+                <h1 id="game-title">2048</h1>
+                <div id="score-container">
+                    <div class="score-box">
+                        <div class="score-label">SCORE</div>
+                        <div id="score">0</div>
+                    </div>
+                    <div class="score-box">
+                        <div class="score-label">BEST</div>
+                        <div id="best-score">0</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="game-info">
+                <p>Join the numbers and get to the <strong>2048 tile!</strong></p>
+                <button id="new-game-btn">New Game</button>
+            </div>
+
+            <div id="game-board"></div>
+
+            <div id="game-message" class="hidden">
+                <p id="message-text"></p>
+                <button id="try-again-btn">Try Again</button>
+            </div>
+
+            <div id="instructions">
+                <p><strong>HOW TO PLAY:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same number touch, they <strong>merge into one!</strong></p>
+            </div>
+        </div>
 
         <p id="footer">
             Hobbies include <a href="snake.html" class="footerlink">building things</a>, <a href="slideshow.html" class="footerlink">photography</a>, and <a href="basketball.html" class="footerlink">Steph Curry 3-pointers</a>.
         </p>
+
+        <script src="js/2048.js"></script>
     </body>
 </html>
